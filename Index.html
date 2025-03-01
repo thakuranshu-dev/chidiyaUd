@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chidiya Ud</title>
+    <link rel="icon" type="image/png" href="resourses/chidiyaUd-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleHome.css">
+    
+</head>
+<body>
+    <div class="preloader" id="pre-loader"><h1>चिड़िया उड़ <span>...</span></h1></div>
+    <audio src="resourses/chidiyaud_bgm1.mp3" autoplay loop>Audio element</audio>
+    <header>
+        <a href="Index.html" id="home"><img src="resourses/chidiyaUd-logo.png" alt="Chidiya Ud" id="logo" loading="lazy"></a>
+    </header>
+    <main>
+        <div class="container">
+            <h1>__चिड़िया उड़__</h1>
+            <h4>Relive the nostalgic joy of childhood!</h4>
+            <img src="resourses/home-bg.jpeg" alt="" id="bgimg" loading="lazy"> 
+
+            <div class="btn-group">
+                <button >
+                    <a href="playground.html">Play</a>
+                </button>
+                <button id="toFade" onclick="fadeIn()">Help!</button>
+            </div>
+           
+        </div> 
+        <div class="tutorial" >
+            <button id="close" onclick="fadeOut()"><img src="resourses/cross-close_icon.png" alt="" loading="lazy"></button>
+            <p>Hey there! The game 'Chidiya Ud' sounds like a fun childhood memory! In this game, players take turns naming differentthings like birds, cars, or stationary items. The catch is that after naming an item, the player must add 'ud' to the endof it if it can fly. If a player forgets to add 'ud' to a flying item or mistakenly adds it to a non-flying item, theylose that round. It's a simple yet engaging game that tests memory and quick thinking. Enjoy reminiscing about thoseplayful moments!</p>
+        </div>
+        <!-- Hidden overlay initially -->
+        <div class="overlay"></div>
+    </main>
+    <script>
+        // handle preloading
+        const preLoader = document.querySelector('#pre-loader');
+        window.addEventListener('load', function(){
+            setTimeout(() => {
+                preLoader.style.display = 'none';
+            }, 2000);
+        })
+        const overlay = document.querySelector('.overlay');
+        function fadeIn(){
+            if (overlay.style.display === 'none' || overlay.style.display === '') {
+                overlay.style.display = 'block'; // Show the overlay
+                document.querySelector('.tutorial').style.display ='flex';
+            } else {
+                overlay.style.display = 'none'; // Hide the overlay
+            }
+        }
+        function fadeOut(){
+            if (overlay.style.display = 'block'){ 
+                overlay.style.display = 'none';
+                document.querySelector('.tutorial').style.display ='none';
+            } else {
+                overlay.style.display = 'none'; // Hide the overlay
+            }
+        }
+    </script>
+</body>
+</html>
+<!-- Embark on a virtual journey back to the good old days with our belovec online game! -->
+
+<!-- Relive the nostalgic joy of childhood with our clasic online game! -->
+
+<!-- Experience teh pure bliss of childhood fun through our captivating online game! -->
+
+<!-- Rediscover teh magic of playtime with our delightful online game! -->

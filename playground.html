@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>chidiya ud</title>
+        <link rel="icon" type="image/png" href="resourses/chidiyaUd-logo.png">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+    <div class="preloader" id="pre-loader"><h1>चिड़िया उड़ <span>...</span></h1></div>
+        <audio src="/resourses/chidiyaud_bgm1.mp3" autoplay loop></audio>
+        <header>
+            <a href="Index.html" id="home"><img src="resourses/chidiyaUd-logo.png" alt="Chidiya Ud" id="logo" loading="lazy"></a>
+        </header>
+        <main>
+            <h1>__चिड़िया उड़__</h1>
+            <div id="container">
+                <span id="points">Score: 0</span>
+                <span id="gain" > </span>
+                <p id="items"></p>
+                
+                <div class="more-opts">
+                    <button class="opt-btn" id="toFade" title="Options"><img src="resourses/three_dot_menu_more_vertical_icon.png" alt=""></button>
+                </div>
+
+                <!-- Hidden overlay initially -->
+                <div class="overlay"></div>
+            </div>
+            
+            <div id="btn-group">
+                <button id="yes" class="btn" onclick="change()">उड़</button>
+                <button id="no" class="btn" onclick="changes()">पास</button>
+            </div>
+
+            <div class="secondary">
+                <img src="resourses/bgImg1.webp" alt="" id="sec-bg" loading="lazy">
+                <p class="score">Score:0</p>
+                <div class="btns">
+                    <button class="opt-btn" id="play" title="Play"><img src="resourses/play button_icon.png" alt="" loading="lazy"></button>
+                    <button class="opt-btn" id="restart" title="Restart"><img src="resourses/restart_icon.png" alt="" loading="lazy"></button>
+                    <button class="opt-btn" id="quite" title="Exit"><img src="resourses/exit_icon.png" alt="" loading="lazy"></button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="foots"> -beta version </p>
+            <p class="foots"> &copy; All rights reserved. </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
