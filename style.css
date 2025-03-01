@@ -31,7 +31,7 @@ body{
     color:#ffffff;
     font-size: 2.5rem; font-weight: 700; text-align: center; text-wrap: nowrap;
     overflow: hidden;
-    animation: preLoader 2s steps(20) ;
+    animation: preLoader 2s steps(20) infinite alternate;
 }
 .preloader span{
     animation: preLoader 2s steps(20) infinite alternate;

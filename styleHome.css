@@ -30,7 +30,7 @@ body{
     font-family: 'Baloo 2', cursive;
     overflow: hidden;
     z-index: 100000;
-    animation: preLoader 2s steps(20) ;
+    animation: preLoader 2s steps(20) infinite alternate;
 }
 #pre-loader span{
     animation: preLoader 2s steps(2) infinite alternate;
