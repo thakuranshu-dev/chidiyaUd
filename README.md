@@ -29,3 +29,7 @@ Chidiya Ud is a classic game where players have to quickly react and respond. Th
 1. Clone the repository:
    ```bash
    git clone https://github.com/thakuranshu-dev/chidiyaUd.git
+
+## License
+
+This repository is currently unlicensed.
